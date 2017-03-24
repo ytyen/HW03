@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <meta charset="utf-8">
+  <title>HW03</title>
+</head>
+
+<body>
+  <h1>1.</h1>
+  <div id="block1">
+    <input type="button" value="新增" onclick="add()">
+    <input type="button" value="移除" onclick="remove()">
+    <input type="button" value="Update" onclick="update()">
+  </div>
+  <hr>
+  <h1>2.</h1>
+  <div id="block2">
+    <h1>請打開Console</h1>
+    <script>
+      var index = ["中國國民黨", "民主進步黨", "時代力量", "無黨團結聯盟", "親民黨"];
+      var color = ['blue', 'green', 'yallow', 'gray', 'orange'];
+
+      var xScale = d3.scale.ordinal()
+        .domain(index)
+        .range(color);
+
+      console.log(xScale("無黨團結聯盟"));
+      console.log(xScale("中國國民黨"));
+      console.log(xScale("時代力量"));
+      console.log(xScale("民主進步黨"));
+      console.log(xScale("親民黨"));
+
+      console.log(xScale("新黨"));
+    </script>
+  </div>
+  <hr>
+
+  <script src="./js/01.js"></script>
+</body>
+
+</html>
