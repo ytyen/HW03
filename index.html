@@ -5,6 +5,31 @@
   <script src="https://d3js.org/d3.v3.min.js"></script>
   <meta charset="utf-8">
   <title>HW03</title>
+
+  <style>
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: black;
+      shape-rendering: crispEdges;
+    }
+
+    #block3 .axis text {
+      font-size: 15px;
+      fill: black;
+    }
+
+    #block4, #block5 {
+      background: #eee;
+      padding: 20px;
+      display: inline-block;
+    }
+
+    #block4 .axis text {
+      font-size: 11px;
+      fill: black;
+    }
+  </style>
 </head>
 
 <body>
@@ -15,6 +40,7 @@
     <input type="button" value="Update" onclick="update()">
   </div>
   <hr>
+
   <h1>2.</h1>
   <div id="block2">
     <h1>請打開Console</h1>
@@ -37,7 +63,22 @@
   </div>
   <hr>
 
+  <h1>3.</h1>
+  <div id="block3"></div>
+  <hr>
+
+  <h1>4.</h1>
+  <div id="block4"></div>
+  <hr>
+
+  <h1>5.</h1>
+  <div id="block5"></div>
+  <hr>
+
   <script src="./js/01.js"></script>
+  <script src="./js/03.js"></script>
+  <script src="./js/04.js"></script>
+  <script src="./js/05.js"></script>
 </body>
 
 </html>
